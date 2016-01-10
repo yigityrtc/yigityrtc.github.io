@@ -16,6 +16,21 @@
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<SCRIPT language=JavaScript>
+document.oncontextmenu = function(){return false}
+if(document.layers) 
+{
+	window.captureEvents(Event.MOUSEDOWN);
+	window.onmousedown = function(e)
+	{
+	if(e.target==document)return false;
+	}
+}
+else 
+{
+	document.onmousedown = function(){return false}
+}
+</SCRIPT>
         
 	</head>
    
